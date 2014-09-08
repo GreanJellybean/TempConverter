@@ -7,12 +7,11 @@
 //
 
 #import "TempViewController.h"
-#import <UIKit/UIKit.h>   //cstoner
 
-@interface TempViewController : UIViewController <UITextFieldDelegate>  //cstoner
+@interface TempViewController ()  //cstoner
 
-@property (nonatomic, weak) IBOutlet UITextField *fahrenheit;
-@property (nonatomic, weak) IBOutlet UITextField *celsius;
+@property (nonatomic, weak) IBOutlet UITextField *fahrenheitTextField;
+@property (nonatomic, weak) IBOutlet UITextField *celsiusTextField;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *convertButton;
 
 @end
@@ -23,7 +22,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        // Custom initialization - cstoner
+        self.title = @"Temperature Calculator";
     }
     return self;
 }

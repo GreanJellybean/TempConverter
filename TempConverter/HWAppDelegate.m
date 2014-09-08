@@ -7,7 +7,7 @@
 //
 
 #import "HWAppDelegate.h"
-#import "TempViewController.h"  // TempViewController added here - cstoner
+#import "TemperatureViewController.h"  // TempViewController added here - cstoner
 
 @implementation HWAppDelegate
 
@@ -18,11 +18,12 @@
     // Override point for customization after application launch.
      self.window.backgroundColor = [UIColor whiteColor];
     // load TempViewController - cstoner
-    TempViewController *tempViewController = [[TempViewController alloc] init];
+    TemperatureViewController *tempViewController = [[TemperatureViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tempViewController];
     
     self.window.rootViewController = navigationController;
-
+    
+    self.window.backgroundColor = [UIColor whiteColor];   //cstoner
     [self.window makeKeyAndVisible];
     return YES;
 }

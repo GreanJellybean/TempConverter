@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97212BBB19AD259B00396CDE /* TemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97212BB919AD259B00396CDE /* TemperatureViewController.m */; };
+		97212BBC19AD259B00396CDE /* TemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97212BBA19AD259B00396CDE /* TemperatureViewController.xib */; };
 		97B3783F199EC75300D48420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B3783E199EC75300D48420 /* Foundation.framework */; };
 		97B37841199EC75400D48420 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B37840199EC75400D48420 /* CoreGraphics.framework */; };
 		97B37843199EC75400D48420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B37842199EC75400D48420 /* UIKit.framework */; };
@@ -19,8 +21,6 @@
 		97B3785A199EC75400D48420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B37842199EC75400D48420 /* UIKit.framework */; };
 		97B37862199EC75400D48420 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97B37860199EC75400D48420 /* InfoPlist.strings */; };
 		97B37864199EC75400D48420 /* TempConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B37863199EC75400D48420 /* TempConverterTests.m */; };
-		97B3786F199EC7A000D48420 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B3786E199EC7A000D48420 /* TempViewController.m */; };
-		97B37873199ECA9D00D48420 /* TempViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B37872199ECA9D00D48420 /* TempViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97212BB819AD259B00396CDE /* TemperatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureViewController.h; sourceTree = "<group>"; };
+		97212BB919AD259B00396CDE /* TemperatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureViewController.m; sourceTree = "<group>"; };
+		97212BBA19AD259B00396CDE /* TemperatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemperatureViewController.xib; sourceTree = "<group>"; };
 		97B3783B199EC75300D48420 /* TempConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B3783E199EC75300D48420 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		97B37840199EC75400D48420 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,9 +53,6 @@
 		97B3785F199EC75400D48420 /* TempConverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TempConverterTests-Info.plist"; sourceTree = "<group>"; };
 		97B37861199EC75400D48420 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		97B37863199EC75400D48420 /* TempConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempConverterTests.m; sourceTree = "<group>"; };
-		97B3786D199EC7A000D48420 /* TempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
-		97B3786E199EC7A000D48420 /* TempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
-		97B37872199ECA9D00D48420 /* TempViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TempViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +116,9 @@
 				97B3784E199EC75400D48420 /* HWAppDelegate.m */,
 				97B37850199EC75400D48420 /* Images.xcassets */,
 				97B37845199EC75400D48420 /* Supporting Files */,
-				97B3786D199EC7A000D48420 /* TempViewController.h */,
-				97B3786E199EC7A000D48420 /* TempViewController.m */,
-				97B37872199ECA9D00D48420 /* TempViewController.xib */,
+				97212BB819AD259B00396CDE /* TemperatureViewController.h */,
+				97212BB919AD259B00396CDE /* TemperatureViewController.m */,
+				97212BBA19AD259B00396CDE /* TemperatureViewController.xib */,
 			);
 			path = TempConverter;
 			sourceTree = "<group>";
@@ -228,9 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B37873199ECA9D00D48420 /* TempViewController.xib in Resources */,
 				97B37849199EC75400D48420 /* InfoPlist.strings in Resources */,
 				97B37851199EC75400D48420 /* Images.xcassets in Resources */,
+				97212BBC19AD259B00396CDE /* TemperatureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +251,7 @@
 			files = (
 				97B3784B199EC75400D48420 /* main.m in Sources */,
 				97B3784F199EC75400D48420 /* HWAppDelegate.m in Sources */,
-				97B3786F199EC7A000D48420 /* TempViewController.m in Sources */,
+				97212BBB19AD259B00396CDE /* TemperatureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +448,7 @@
 				97B37869199EC75400D48420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97B3786A199EC75400D48420 /* Build configuration list for PBXNativeTarget "TempConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +457,7 @@
 				97B3786C199EC75400D48420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
